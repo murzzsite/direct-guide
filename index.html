@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Яндекс Директ — пошаговая инструкция</title>
+<meta name="description" content="Как запустить рекламу в Яндекс Директе самостоятельно: регистрация, настройка кампании, пополнение бюджета и проверка заявок.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --bg:#ffffff; --bg-2:#f8faff; --border:#e2e8f0; --text:#0f172a; --text-2:#475569; --text-3:#94a3b8;
+    --accent:#2563eb; --accent-dark:#1d4ed8; --accent-light:#eff6ff; --accent-mid:#dbeafe;
+    --green:#16a34a; --green-light:#dcfce7; --amber:#b45309; --amber-light:#fef3c7;
+    --shadow:0 4px 24px rgba(37,99,235,0.08);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--bg); color:var(--text); font-family:'Inter',system-ui,sans-serif; font-size:16px; line-height:1.55; padding-inline:16px;}
+  h1,h2,h3{font-family:'Space Grotesk',sans-serif; text-wrap:balance; margin:0;}
+  a{color:var(--accent);}
+  .wrap{max-width:760px; margin:0 auto; padding:24px 0 56px;}
+
+  .hero{background:linear-gradient(135deg,var(--accent),var(--accent-dark)); color:#fff; border-radius:18px; padding:32px 28px; position:relative; overflow:hidden;}
+  .hero::after{content:""; position:absolute; top:-60px; right:-60px; width:200px; height:200px; background:rgba(255,255,255,.08); border-radius:50%;}
+  .eyebrow{font-size:12px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; opacity:.85; margin-bottom:10px;}
+  .hero h1{font-size:clamp(26px,5vw,34px); line-height:1.15;}
+  .hero p{margin:14px 0 0; color:#dbeafe; max-width:520px;}
+
+  .toc{display:flex; flex-wrap:wrap; gap:8px; margin:20px 0 4px;}
+  .toc a{text-decoration:none; background:var(--accent-light); color:var(--accent-dark); border:1px solid var(--accent-mid); padding:6px 12px; border-radius:999px; font-size:13.5px; font-weight:500;}
+
+  .step{background:var(--bg-2); border:1px solid var(--border); border-left:4px solid var(--accent); border-radius:12px; padding:20px 22px; margin-top:16px; box-shadow:var(--shadow);}
+  .step-head{display:flex; align-items:center; gap:12px; margin-bottom:10px;}
+  .num{flex-shrink:0; width:32px; height:32px; border-radius:50%; background:var(--accent); color:#fff; font-family:'Space Grotesk',sans-serif; font-weight:700; display:flex; align-items:center; justify-content:center;}
+  .step h2{font-size:19px;}
+  .step p{margin:8px 0; color:var(--text-2);}
+  .step ul,.step ol{margin:8px 0 8px 20px; padding:0; color:var(--text-2);}
+  .step li{margin:5px 0;}
+  .step b{color:var(--text);}
+  .chip{display:inline-block; background:var(--accent-mid); color:var(--accent-dark); font-weight:600; font-size:13.5px; padding:2px 9px; border-radius:6px;}
+
+  .note{border-radius:10px; padding:12px 14px; margin:12px 0 4px; font-size:14.5px;}
+  .note.tip{background:var(--green-light); color:#14532d;}
+  .note.warn{background:var(--amber-light); color:#78350f;}
+
+  table{width:100%; border-collapse:collapse; margin:10px 0; font-size:14.5px;}
+  th,td{text-align:left; padding:8px 10px; border-bottom:1px solid var(--border); vertical-align:top;}
+  th{color:var(--text); font-weight:600; background:var(--accent-light);}
+  td{color:var(--text-2);}
+
+  .foot{margin-top:28px; color:var(--text-3); font-size:13.5px; text-align:center;}
+  @media (max-width:520px){ .hero{padding:26px 20px;} .step{padding:16px;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="eyebrow">Инструкция</div>
+    <h1>Как запустить рекламу в Яндекс Директе</h1>
+    <p>Пошагово и простыми словами: от регистрации до первых заявок. Реклама даёт обращения уже в первые дни, пока SEO-продвижение набирает силу.</p>
+  </header>
+
+  <nav class="toc" aria-label="Содержание">
+    <a href="#s1">1. Аккаунт</a>
+    <a href="#s2">2. Кампания</a>
+    <a href="#s3">3. Запросы</a>
+    <a href="#s4">4. Объявления</a>
+    <a href="#s5">5. Бюджет</a>
+    <a href="#s6">6. Модерация</a>
+    <a href="#s7">7. Заявки</a>
+    <a href="#s8">8. Что смотреть</a>
+  </nav>
+
+  <section class="step" id="s1">
+    <div class="step-head"><div class="num">1</div><h2>Заведите аккаунт Директа</h2></div>
+    <ol>
+      <li>Откройте <a href="https://direct.yandex.ru" target="_blank" rel="noopener">direct.yandex.ru</a> и нажмите «Начать».</li>
+      <li>Войдите в свой Яндекс ID (почта от Яндекса). Если её нет, создайте новую.</li>
+      <li>Укажите страну, валюту (рубли) и тип клиента: физлицо, ИП или организация.</li>
+    </ol>
+    <div class="note tip">Лучше заводить отдельный аккаунт под рекламу и привязать к нему рабочую почту, чтобы сюда приходили все уведомления.</div>
+  </section>
+
+  <section class="step" id="s2">
+    <div class="step-head"><div class="num">2</div><h2>Создайте кампанию через «Мастер кампаний»</h2></div>
+    <p>Мастер сам ведёт по шагам, и это самый простой путь для новичка.</p>
+    <ol>
+      <li>В кабинете нажмите <span class="chip">Создать кампанию</span> и выберите <b>«Мастер кампаний»</b>.</li>
+      <li>Цель: <b>«Конверсии»</b> (заявки, звонки). Если спросит, что считать конверсией, выберите отправку формы или клик по телефону.</li>
+      <li>Адрес сайта: вставьте ссылку на ваш сайт (на ваш домен после переноса).</li>
+      <li>Регион показа: укажите город или область, где вы работаете. Остальные регионы лучше не включать, иначе деньги уйдут впустую.</li>
+    </ol>
+    <div class="note warn">Названия кнопок в Директе иногда меняются. Если не нашли нужную, напишите нам, и мы подскажем по скриншоту.</div>
+  </section>
+
+  <section class="step" id="s3">
+    <div class="step-head"><div class="num">3</div><h2>Добавьте ключевые запросы</h2></div>
+    <p>Это фразы, которые люди вводят в поиск, когда им нужна ваша услуга.</p>
+    <ul>
+      <li>Начните с 5–10 самых коммерческих фраз вида <b>«услуга + город»</b> и <b>«заказать / цена / стоимость + услуга»</b>.</li>
+      <li>Слова вроде «бесплатно», «своими руками», «скачать», «отзывы» и «фото» добавьте в <b>минус-слова</b>, чтобы реклама не показывалась тем, кто не купит.</li>
+      <li>Мы подготовим список запросов и минус-слов отдельно, вам останется вставить его в поле.</li>
+    </ul>
+  </section>
+
+  <section class="step" id="s4">
+    <div class="step-head"><div class="num">4</div><h2>Напишите объявления</h2></div>
+    <table>
+      <tr><th>Поле</th><th>Что писать</th></tr>
+      <tr><td>Заголовок</td><td>Услуга и город, например: «Бухгалтер для ИП в Москве»</td></tr>
+      <tr><td>Текст</td><td>Главная выгода и призыв: «От 3 000 ₽ в месяц. Оставьте заявку, перезвоним за 15 минут»</td></tr>
+      <tr><td>Быстрые ссылки</td><td>Услуги, цены, отзывы, контакты</td></tr>
+      <tr><td>Уточнения</td><td>Бесплатная консультация, опыт N лет, работаем без выходных</td></tr>
+      <tr><td>Визитка</td><td>Телефон, режим работы, адрес (если принимаете клиентов)</td></tr>
+    </table>
+    <div class="note tip">Не обещайте того, чего не делаете: модерация это заметит, а клиент разочаруется.</div>
+  </section>
+
+  <section class="step" id="s5">
+    <div class="step-head"><div class="num">5</div><h2>Установите бюджет и пополните счёт</h2></div>
+    <ul>
+      <li><b>Недельный бюджет:</b> для начала хватает 5–10 тысяч рублей в неделю. Меньше собрать данные трудно.</li>
+      <li><b>Стратегия:</b> выберите «Максимум конверсий» с ограничением по недельному бюджету.</li>
+      <li><b>Пополнение:</b> раздел «Кошелёк» → «Пополнить». Картой оплата проходит сразу, по счёту для организаций дольше.</li>
+    </ul>
+    <div class="note warn">Без денег на счёте реклама не показывается, даже если кампания прошла модерацию.</div>
+  </section>
+
+  <section class="step" id="s6">
+    <div class="step-head"><div class="num">6</div><h2>Отправьте на модерацию</h2></div>
+    <ol>
+      <li>Проверьте регион, запросы, бюджет и тексты.</li>
+      <li>Нажмите «Запустить» / «Отправить на модерацию».</li>
+      <li>Проверка занимает от нескольких минут до одного рабочего дня.</li>
+    </ol>
+    <p>Если объявление отклонили, в кабинете будет причина. Обычно это слишком громкие обещания, запрещённые слова или неработающая ссылка. Исправьте и отправьте снова.</p>
+  </section>
+
+  <section class="step" id="s7">
+    <div class="step-head"><div class="num">7</div><h2>Принимайте заявки</h2></div>
+    <ul>
+      <li>Заявки с формы на сайте приходят туда, куда мы подключили уведомления (Telegram и другие каналы).</li>
+      <li>Отвечайте на заявку <b>в течение 5–15 минут</b>: чем быстрее, тем выше шанс договориться.</li>
+      <li>Записывайте, откуда клиент пришёл, чтобы понимать, что работает.</li>
+    </ul>
+  </section>
+
+  <section class="step" id="s8">
+    <div class="step-head"><div class="num">8</div><h2>Что смотреть через 1–2 недели</h2></div>
+    <table>
+      <tr><th>Показатель</th><th>Что значит</th></tr>
+      <tr><td>Клики</td><td>Сколько человек перешло на сайт</td></tr>
+      <tr><td>Цена клика</td><td>Сколько стоит один переход</td></tr>
+      <tr><td>Заявки</td><td>Сколько людей оставили контакты или позвонили</td></tr>
+      <tr><td>Цена заявки</td><td>Сумма расходов, делённая на число заявок. Главный показатель.</td></tr>
+    </table>
+    <p>Если заявок мало, смотрим «Поисковые запросы» в отчётах: лишние добавляем в минус-слова, самые удачные усиливаем. Для этого не нужно разбираться в Директе, достаточно прислать нам скриншот отчёта.</p>
+  </section>
+
+  <p class="foot">Остались вопросы? Напишите нам в ответ на сообщение, и мы поможем с настройкой.</p>
+</div>
+</body>
+</html>
